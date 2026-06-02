@@ -96,8 +96,8 @@ class TinyViEncoder(nn.Module):
 
         
     def __init__(self, 
-                image_size: int = 32 , 
-                patch_size: int = 4 , 
+                image_size: int = 224 , 
+                patch_size: int = 16 , 
                 in_channels = 3 , 
                 embed_dim: int = 256,
                 num_layers: int = 6, 
@@ -167,8 +167,8 @@ class TinyViEncoder(nn.Module):
 
 if __name__ == "__main__":
     model = TinyViEncoder( 
-                        image_size = 32 , 
-                        patch_size = 4 , 
+                        image_size = 224 , 
+                        patch_size = 16 , 
                         embed_dim = 512,
                         num_layers = 8, 
                         num_heads = 8, 
